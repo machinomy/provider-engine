@@ -30,6 +30,7 @@ function FilterSubprovider(opts) {
   self._ready.go()
   self.pendingBlockTimeout = opts.pendingBlockTimeout || 4000
   self.checkForPendingBlocksActive = false
+  self.engine = opts.engine
 
   // we dont have engine immeditately
   setTimeout(function(){
